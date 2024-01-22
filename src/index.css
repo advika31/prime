@@ -84,6 +84,7 @@ body {
   border: solid #0f79af ;
   padding: 14px 60px;
   border-radius: 3px;
+  cursor: pointer;
 }
 h1{
   color: white;
