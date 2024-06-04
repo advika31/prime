@@ -24,6 +24,8 @@
     gap: 20px;
     overflow-x: auto;
     padding: 15px;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
 }
 
 .event-cards::-webkit-scrollbar {
