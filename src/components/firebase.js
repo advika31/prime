@@ -3,7 +3,7 @@ import { getAnalytics } from "firebase/analytics";
 import{getAuth,GoogleAuthProvider} from "firebase/auth"
 const firebaseConfig = {
   apiKey: "AIzaSyCNt9nx3rms3H6eYjAp0Sa-SP-YR8lUVzg",
-  authDomain: "https://prime-tawny.vercel.app/",
+  authDomain: "prime-clone-483bf.firebaseapp.com",
   projectId: "prime-clone-483bf",
   storageBucket: "prime-clone-483bf.appspot.com",
   messagingSenderId: "662784129279",
