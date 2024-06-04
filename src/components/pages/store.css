@@ -1,0 +1,107 @@
+.store {
+    color: white;
+    padding: 0px;
+}
+
+.store h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.store-section {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.store-cards {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 15px;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}
+
+.store-cards::-webkit-scrollbar {
+    display: none;  
+}
+
+.store-card {
+    background-color: #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; 
+}
+
+.store-card:hover {
+    transform: scale(1.02); 
+    transition: transform 0.3s; 
+}
+
+.store-image {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.store-image img {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.store-info {
+    padding: 10px;
+    text-align: left;
+}
+
+.store-info h4 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.store-info p {
+    margin: 5px 0 10px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.more-details-button, .play-button {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    height: 70px;
+    width: 140px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px; 
+    left: 20px; 
+    z-index: 10; 
+}
+.play-button{
+    border-radius: 50%;
+    width: 70px;
+    font-size: 40px;
+    align-content: center;
+    left:50px ;
+    bottom: 0px;
+}
+.more-details-button:hover , .play-button:hover {
+    background-color: rgb(233, 229, 229);
+    color: #4c4949;
+    transform: scale(1.1); 
+    transition: transform 0.3s; 
+}

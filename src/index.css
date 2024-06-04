@@ -1,13 +1,288 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.cdnfonts.com/css/amazon-ember');
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  background-color: #000000;
+  font-family: "amazon ember", sans-serif;
+}
+.nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+  height: 45px;
+  font-weight: bold;
+  font-size: larger;
+  font-family: "amazon ember", sans-serif;
+  position: relative;
+}
+.nav ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav a{
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+}
+.nav li{
+  color: grey;
+}
+.user{
+  font-size: x-large;
+}
+.nav li:hover{
+  color: white;
+  background-color: #37475a ;
+}
+.nav li button{
+  background-color: #000;
+  color: grey;
+  border: none;
+  padding: 12px;
+  font-size: 21px;
+  font-family: "amazon ember", sans-serif;
+  font-weight: bold;
+}
+.nav li button:hover{
+  background-color: #37475a;
+}
+.search-bar {
+  background-color:  #1b2430;
+  position: absolute; 
+  top: 45px; 
+  right: 136px; 
+  border: 10px solid  #1b2430;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 5px;
+  width: 940px;
+  height: 75px;
+  display: flex;
+}
+
+.search-bar input {
+  width: 100%; 
+  padding: 8px;
+  border: white 20px;
+  border-radius: 7px;
+  background-color:  #373d46;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.title-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.title{
+  color: white;
+  margin-left: 30px;
+  flex: 0.5;
+}
+.title h1, .title h2{
+  font-weight:lighter;
+  font-family: "amazon ember", sans-serif;
+  text-align: left;
+  padding: 0;
+}
+.title h1{
+  font-size: 35px;
+}
+.title h2{
+  font-size: 25px;
+}
+.title button{
+  background-color: #0f79af;
+  font-weight: bold;
+  color: white;
+  font-size: 17px;
+  line-height: 25px;
+  letter-spacing: normal;
+  word-spacing: normal;
+  border: none ;
+  padding: 16px 70px;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 280px;
+}
+.heading h1{
+  color: white;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  font-size: 40px;
+}
+h3{
+  color: rgb(255, 217, 0);
+  text-align: left;
+  margin: 20px;  
+}
+.sign{
+  border: solid white 2px;
+  margin: 50px auto;
+  max-width: 400px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(196, 21, 21, 0.2);
+  background: linear-gradient(135deg, #000000, #0f90cb, #ce3636);
+}
+.sign h1{
+  color: white;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.auth-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form input {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  outline: none;
+  
+}
+.login-form input:focus {
+  background-color: #fff;
+}
+.login-form button {
+  background: linear-gradient(135deg, #1c3e71, #d76d77, #ffaf7b);
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.login-form button:hover {
+  background: linear-gradient(135deg, #632b6c, #e3466e, #ffa272);
+}
+.google-form button {
+  background: linear-gradient(135deg,  #c42d16,  #e4ea35, #0f79af);
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.google-form button:hover {
+  background: linear-gradient(135deg,  #357ae8, #d2a005, #e13224);
+}
+.out button {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 5px;
+}
+.out button:hover {
+  background-color: #1a1a1a;
+}
+section{
+  color: white;
+  text-align: center;
+  font-size: large;
+}
+.movies{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.movies img{
+  max-width: 100%;
+  height: auto;
+  padding-left: 5px;
+  padding-top: 15px;
+  padding-right: 0px;
+}
+.language-button, .categories-button, .home-button{
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 1.5rem;
+}
+.language-dropdown, .genre-dropdown, .home-dropdown{
+  position: absolute;
+  top: 45px;
+  right: 50px;
+  background-color: #232f3e;
+  border-radius: 4px;
+  width: 1000px;
+  display: flex;
+  z-index: 1000;
+}
+.language-dropdown{
+  width: 110px;
+  right: 150px;
+}
+.genre-dropdown{
+  width: 500px;
+  right: 340px;
+}
+.home-dropdown{
+  width: 100px;
+  height: 220px;
+  right: 860px;
+  border: none;
+  border-radius: 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.language-column, .genre-column, .home-column {
+  width: 100%;
+}
+.language-dropdown ul , .genre-column ul, .home-dropdown ul{
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+  display: block;
+}
+.language-dropdown li , .genre-column li, .home-column li {
+  padding: 10px;
+  color: #595353;
+  cursor: pointer;
+}
+.home-column li{
+  padding: 0px;
+  margin: 0;
+}
+.language-dropdown li:hover , .genre-column li:hover, .home-column li:hover{
+  background-color: white;
+  color: #000;
+  border-radius: 10px;
 }

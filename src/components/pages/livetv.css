@@ -1,0 +1,93 @@
+.livetv {
+    color: white;
+    padding: 20px;
+}
+
+.livetv h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.livetv section {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.livetv h3 {
+    color: #ff9900;
+    margin-bottom: 20px;
+}
+
+.event-cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 15px;
+}
+
+.event-cards::-webkit-scrollbar {
+    display: none;  
+}
+
+.event-card {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 0 0 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: scale(1.1); 
+}
+
+.event-image {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; 
+    overflow: hidden;
+    border-bottom: 1px solid #333;
+}
+
+.event-image img {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.event-info {
+    padding: 10px;
+    text-align: left;
+}
+
+.event-info h4 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.event-info p {
+    margin: 5px 0 10px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.subscribe-button {
+    background-color: #ff9900;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: #cc7a00;
+}
