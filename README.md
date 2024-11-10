@@ -1,41 +1,47 @@
 # Amazon Prime Clone
 
-A frontend clone of Amazon Prime Video, built with **React**. This project replicates the Amazon Prime Video interface, showcasing skills in React component structure, state management, and UI design.
+A frontend clone of Amazon Prime Video, built with **React** and integrated with **Firebase** for backend functionalities. This project emulates the Amazon Prime Video interface, showcasing both UI design and basic authentication.
 
 ## 📖 Features
 
-- **Landing Page**: Designed to resemble Amazon Prime Video’s homepage.
-- **Browse Section**: Display a collection of shows and movies using mock data.
-- **Responsive Design**: Optimized for various screen sizes and devices.
-  
+- **Landing Page**: A visually appealing homepage similar to Amazon Prime Video.
+- **User Authentication**: Sign-up and login functionality using Firebase Authentication.
+- **Browse Section**: Displays a collection of movies and shows with categories.
+- **Responsive Design**: Optimized for different devices and screen sizes.
+
 ## 🛠️ Technologies Used
 
-- **React**: For building UI components and managing state
-- **CSS**: For styling and layout
-- **JavaScript**: For interactivity and data handling within React
+- **React**: For building the user interface and managing component states.
+- **Firebase**: For backend services like authentication and data storage.
+- **CSS**: For styling the application.
+- **JavaScript**: For handling dynamic content and functionality.
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- React.js and npm installed
+- React.js and npm installed on your machine.
 
 ### Installation
-1. Clone the repository:
+1. Clone this repository:
    ```bash
    git clone https://github.com/advika31/prime.git
    ```
-2. Navigate to the project directory and install dependencies:
+2. Install dependencies:
    ```bash
    cd prime
    npm install
    ```
-3. Start the development server:
+3. Set up Firebase:
+   - Create a Firebase project at [Firebase Console](https://console.firebase.google.com/).
+   - Enable Authentication and Firestore as needed.
+   - Add your Firebase configuration to your React project.
+4. Run the project:
    ```bash
    npm start
    ```
-4. Open your browser and go to `http://localhost:3000` to view the project.
 
 ## 💡 Future Enhancements
 
-- Integrate a backend for user authentication and data management.
-- Add advanced features like video playback, recommendations, and search.
+- Implement video playback functionality.
+- Add personalized recommendations based on user preferences.
+- Expand Firebase integration for storing user watch history and preferences.
